@@ -18,20 +18,20 @@ param (
     [string]$arm64 = "false",
     # Specify the download folder path
     [string]$DownloadTo = "(New-Object -ComObject Shell.Application).NameSpace('shell:Downloads').Self.Path",
-    # Specify whether to include .NET 11.0
+    # Specify whether to include .NET 11.0 when will it be available. To add more versions consider check variable '$versionsToProcess' 
     [string]$11_0 = "false",
     # Specify whether to include .NET 10.0
     [string]$10_0 = "true",
     # Specify whether to include .NET 9.0
     [string]$9_0 = "true",
     # Specify whether to include .NET 8.0
-    [string]$8_0 = "true",
+    [string]$8_0 = "false",
     # Specify whether to include .NET 7.0
     [string]$7_0 = "true",
     # Specify whether to include .NET 6.0
     [string]$6_0 = "true",
     # Specify whether to include .NET 5.0
-    [string]$5_0 = "true",
+    [string]$5_0 = "false",
     # Specify whether to automatically install packages after downloading
     [string]$AutoInstall = "true",
     # Specify whether to download all packages first, then install them
@@ -41,12 +41,6 @@ param (
     # Specify whether to delete packages after installation
     [string]$DeleteAfterInstall = "false"
 )
-
-# Set the background color to Black
-$Host.UI.RawUI.BackgroundColor = "Black"
-
-# Clear the console to apply the new background color uniformly
-Clear-Host
 
 # Hide downloading progress
 $ProgressPreference = 'SilentlyContinue'
