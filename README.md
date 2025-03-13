@@ -1,6 +1,5 @@
 
 # .NET_Downloader_PS1
-Flexible .NET packages downloader written in PowerShell 5.1
 
 This PowerShell script automates the process of downloading and installing specific versions of the .NET runtime, SDK, and other related components. It supports downloading packages for multiple architectures (x86, x64, ARM64) and provides options for installation and cleanup.
 
