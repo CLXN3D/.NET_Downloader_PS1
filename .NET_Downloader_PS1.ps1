@@ -25,13 +25,13 @@ param (
     # Specify whether to include .NET 9.0
     [string]$9_0 = "true",
     # Specify whether to include .NET 8.0
-    [string]$8_0 = "false",
+    [string]$8_0 = "true",
     # Specify whether to include .NET 7.0
     [string]$7_0 = "true",
     # Specify whether to include .NET 6.0
     [string]$6_0 = "true",
     # Specify whether to include .NET 5.0
-    [string]$5_0 = "false",
+    [string]$5_0 = "true",
     # Specify whether to automatically install packages after downloading
     [string]$AutoInstall = "true",
     # Specify whether to download all packages first, then install them
