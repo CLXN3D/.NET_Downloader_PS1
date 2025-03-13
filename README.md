@@ -41,7 +41,7 @@ The script accepts the following parameters:
 | `x64`                    | Include x64 architecture.                                                                       | `"true"`      |
 | `arm64`                  | Include ARM64 architecture.                                                                     | `"false"`     |
 | `DownloadTo`             | Specify the folder where files will be downloaded.                                              | `Downloads`   |
-| `10_0`                   | Include specific .NET versions (e.g., `"true"` to include .NET 10.0).                           | `"true"` \ `"false"`     |
+| `10_0`                   | Include specific .NET versions (e.g., `"true"` to include .NET 10.0).                           | `"true"`      |
 | `AutoInstall`            | Automatically install packages after downloading.                                               | `"true"`      |
 | `DownloadAllThenInstall` | Download all packages first, then install them.                                                 | `"true"`      |
 | `DownloadOneThenInstall` | Download and install one package at a time.                                                     | `"false"`     |
