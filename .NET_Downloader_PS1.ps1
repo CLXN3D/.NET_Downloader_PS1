@@ -42,6 +42,12 @@ param (
     [string]$DeleteAfterInstall = "false"
 )
 
+# Set the background color to Black
+$Host.UI.RawUI.BackgroundColor = "Black"
+
+# Clear the console to apply the new background color uniformly
+Clear-Host
+
 # Hide downloading progress
 $ProgressPreference = 'SilentlyContinue'
 
