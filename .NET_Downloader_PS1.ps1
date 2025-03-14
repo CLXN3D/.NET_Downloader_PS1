@@ -16,7 +16,7 @@ param (
     [string]$x64 = "true",
     # Specify whether to include ARM64 architecture
     [string]$arm64 = "false",
-    # Specify the download folder path
+    # Specify the download folder path. Currently: '$env:USERPROFILE\Downloads'
     [string]$DownloadTo = "(New-Object -ComObject Shell.Application).NameSpace('shell:Downloads').Self.Path",
     # Specify whether to include .NET 11.0 when will it be available. To add more versions consider check variable '$versionsToProcess' 
     [string]$11_0 = "false",
@@ -25,13 +25,13 @@ param (
     # Specify whether to include .NET 9.0
     [string]$9_0 = "true",
     # Specify whether to include .NET 8.0
-    [string]$8_0 = "false",
+    [string]$8_0 = "true",
     # Specify whether to include .NET 7.0
     [string]$7_0 = "true",
     # Specify whether to include .NET 6.0
     [string]$6_0 = "true",
     # Specify whether to include .NET 5.0
-    [string]$5_0 = "false",
+    [string]$5_0 = "true",
     # Specify whether to automatically install packages after downloading
     [string]$AutoInstall = "true",
     # Specify whether to download all packages first, then install them
@@ -39,7 +39,7 @@ param (
     # Specify whether to download one package, install it, then proceed to the next
     [string]$DownloadOneThenInstall = "false",
     # Specify whether to delete packages after installation
-    [string]$DeleteAfterInstall = "false"
+    [string]$DeleteAfterInstall = "true"
 )
 
 # Hide downloading progress
